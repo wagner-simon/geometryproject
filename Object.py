@@ -2,7 +2,7 @@ from Pyramid import Pyramid
 from Sphere import Sphere
 
 
-class Body:
+class Object:
     def __init__(self):
         pass
 

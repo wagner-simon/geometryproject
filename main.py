@@ -1,13 +1,13 @@
-from Body import  Body
+from Object import  Object
 print 'This program will calculate the values of geometric objects for you'
 print '1: Pyramid'
 print '2: Sphere'
 print 'choose a object by typing in it\'s number'
-bodyInput = raw_input()
+objectInput = raw_input()
 
-body = Body()
-if bodyInput == '1':
-    pyramid = body.pyramid()
+object = Object()
+if objectInput == '1':
+    pyramid = object.pyramid()
     if pyramid.a != 0 and pyramid.h != 0:
         print ''
         print 'a = ' + str(round(pyramid.a, 2))
@@ -23,8 +23,8 @@ if bodyInput == '1':
         print ''
         print "Don't you dare. This combination of variables can not be converted into other variables or is too hard for me to program."
 
-if bodyInput == '2':
-    sphere = body.sphere()
+if objectInput == '2':
+    sphere = object.sphere()
     print ''
     print 'r = ' + str(round(sphere.r, 2))
     print 'd = ' + str(round(sphere.d, 2))
