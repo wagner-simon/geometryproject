@@ -1,5 +1,6 @@
 from Pyramid import Pyramid
 from Sphere import Sphere
+from Rectangle import Rectangle
 
 
 class Object:
@@ -115,3 +116,37 @@ class Object:
             variables['U'] = self.U
 
         return Sphere(variables)
+
+    def rectangle(self):
+        print 'Type in the variables you already know.'
+        try:
+            self.a = float(raw_input('a = '))
+        except(ValueError):
+            self.a = 0
+
+        try:
+            self.b = float(raw_input('b = '))
+        except(ValueError):
+            self.b = 0
+
+        try:
+            self.O = float(raw_input('O = '))
+        except(ValueError):
+            self.O = 0
+
+        try:
+            self.U = float(raw_input('U = '))
+        except(ValueError):
+            self.U = 0
+
+        variables = {}
+        if self.a != 0:
+            variables['a'] = self.a
+        if self.b != 0:
+            variables['b'] = self.b
+        if self.O != 0:
+            variables['O'] = self.O
+        if self.U != 0:
+            variables['U'] = self.U
+
+        return Rectangle(variables)
