@@ -43,6 +43,13 @@ def start():
         print 'O = ' + str(round(rectangle.O, 2))
         print 'U = ' + str(round(rectangle.U, 2))
 
+    if objectInput == '4':
+        square = object.square()
+        print ''
+        print 'a = ' + str(round(square.a, 2))
+        print 'V = ' + str(round(square.V, 2))
+        print 'U = ' + str(round(square.U, 2))
+
     else:
         start()
 start()
