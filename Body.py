@@ -1,4 +1,5 @@
 from Pyramid import Pyramid
+from Sphere import Sphere
 
 
 class Body:
@@ -38,3 +39,25 @@ class Body:
             variables['s'] = self.s
 
         return Pyramid(variables)
+
+    def sphere(self):
+        print 'Type in the variable you already know. If you don\'t know a variable, type in "0".'
+        self.r = float(raw_input('r = '))
+        self.d = float(raw_input('d = '))
+        self.V = float(raw_input('V = '))
+        self.M = float(raw_input('O = '))
+        self.U = float(raw_input('U = '))
+
+        variables = {}
+        if self.r != 0:
+            variables['r'] = self.r
+        if self.d != 0:
+            variables['d'] = self.d
+        if self.V != 0:
+            variables['V'] = self.V
+        if self.M != 0:
+            variables['O'] = self.M
+        if self.U != 0:
+            variables['U'] = self.U
+
+        return Sphere(variables)

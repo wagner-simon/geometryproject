@@ -47,22 +47,22 @@ class Pyramid():
             self.h = 3 * self.V / self.a ** 2
 
     def calculateHD(self):
-            self.hD = (self.h ** 2 + (self.a / 2) ** 2) ** .5
+        self.hD = (self.h ** 2 + (self.a / 2) ** 2) ** .5
 
     def calculateM(self):
-            self.M = 2 * self.a * self.hD
+        self.M = 2 * self.a * self.hD
 
     def calculateG(self):
-            self.G = self.a ** 2
+        self.G = self.a ** 2
 
     def calculateO(self):
-            self.O = self.M + self.G
+        self.O = self.M + self.G
 
     def calculateV(self):
-            self.V = self.a ** 2 * self.h / 3
+        self.V = self.a ** 2 * self.h / 3
 
     def calculateD(self):
-            self.d = (2 ** .5) * self.a
+        self.d = (2 ** .5) * self.a
 
     def calculateS(self):
-            self.s = (self.h ** 2 + self.a ** 2 / 2) ** .5
+        self.s = (self.h ** 2 + self.a ** 2 / 2) ** .5
