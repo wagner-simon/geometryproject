@@ -1,8 +1,12 @@
 from Body import  Body
-bodyInput = raw_input('Type in the type of geometric object you want to know stuff about(pyramid, sphere) ')
+print 'This program will calculate the values of geometric objects for you'
+print '1: Pyramid'
+print '2: Sphere'
+print 'choose a object by typing in it\'s number'
+bodyInput = raw_input()
 
 body = Body()
-if bodyInput == 'pyramid':
+if bodyInput == '1':
     pyramid = body.pyramid()
     if pyramid.a != 0 and pyramid.h != 0:
         print ''
@@ -19,7 +23,7 @@ if bodyInput == 'pyramid':
         print ''
         print "Don't you dare. This combination of variables can not be converted into other variables or is too hard for me to program."
 
-if bodyInput == 'sphere':
+if bodyInput == '2':
     sphere = body.sphere()
     print ''
     print 'r = ' + str(round(sphere.r, 2))
