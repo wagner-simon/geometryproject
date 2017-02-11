@@ -1,6 +1,9 @@
 from Pyramid import Pyramid
 class Body:
     def __init__(self):
+        pass
+
+    def pyramid(self):
         print 'Type in the two variables you already know. If you don\'t know a variable, type in "0".'
         self.a = float(raw_input('a = '))
         self.h = float(raw_input('h = '))
@@ -12,7 +15,6 @@ class Body:
         self.G = float(raw_input('G = '))
         self.s = float(raw_input('s = '))
 
-    def pyramid(self):
         variables = {}
         if self.a != 0:
             variables['a'] = self.a
