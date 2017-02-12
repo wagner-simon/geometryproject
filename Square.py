@@ -3,17 +3,17 @@ class Square():
         for key, value in args.iteritems():
             setattr(self, key, value)
         self.calculateA()
-        self.calculateV()
+        self.calculateO()
         self.calculateU()
 
     def calculateA(self):
-        if hasattr(self, 'V'):
-            self.a = self.V ** .5
+        if hasattr(self, 'O'):
+            self.a = self.O ** .5
         if hasattr(self, 'U'):
             self.a = self.U / 4
 
-    def calculateV(self):
-        self.V = self.a ** 2
+    def calculateO(self):
+        self.O = self.a ** 2
 
     def calculateU(self):
         self.U = self.a * 4

@@ -47,8 +47,16 @@ def start():
         square = object.square()
         print ''
         print 'a = ' + str(round(square.a, 2))
-        print 'V = ' + str(round(square.V, 2))
+        print 'O = ' + str(round(square.O, 2))
         print 'U = ' + str(round(square.U, 2))
+
+    if objectInput == '5':
+        cube = object.cube()
+        print ''
+        print 'a = ' + str(round(cube.a, 2))
+        print 'V = ' + str(round(cube.V, 2))
+        print 'O = ' + str(round(cube.O, 2))
+
 
     else:
         start()
